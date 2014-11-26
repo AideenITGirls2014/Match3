@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gems Swapper (html5/Js Game)</title>
+	<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Candy Crush clone (simple) made in 2 days with Javascript, html/css (dom), Jquery & HammerJS.">
+	<meta name="author" content="Didier Chartrain http://github.com/copycut">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@copycut">
+	<meta name="twitter:creator" content="@copycut">
+	<meta name="twitter:title" content="Gems Swapper (html5/Js Game)">
+	<meta name="twitter:description" content="Candy Crush clone (simple) made in 2 days with Javascript, html/css (dom), Jquery & HammerJS.">
+	<meta name="twitter:url" content="http://copycut.github.io/gems-swapper/">
+	<meta name="twitter:image:src" content="http://cl.ly/image/1a082L3n3S1S"/>
+	<meta property="og:title" content="Gems Swapper (html5/Js Game)">
+	<meta property="og:description" content="Candy Crush clone (simple) made in 2 days with Javascript, html/css (dom), Jquery & HammerJS.">
+	<meta property="og:url" content="http://copycut.github.io/gems-swapper/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://cl.ly/image/1a082L3n3S1S">
+</head>
+<body>
+	<div class="twitterButton">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="copycut" data-hashtags="gamedev">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+		</script>
+	</div>
+
+	<div class="ui" id="ui">
+		<h1>&lt; <strong>Gems Swapper</strong> /&gt;</h1>
+		<p id="score">Score: <span class="score">0</span></p>
+		<p id="combo">Combo: <span class="combo">0</span></p>
+		<p id="bestCombo">Best Combo: <span class="bestCombo">0</span></p>
+	</div>
+
+	<div class="message">
+		<h2>How many rows ?</h2>
+		<ul>
+			<li><button class="four" value="4">4*4</button></li>
+			<li><button class="six" value="6">6*6</button></li>
+			<li><button class="eight" value="8">8*8</button></li>
+			<li><button class="ten" value="10">10*10</button></li>
+			<li><button class="twelve" value="12">12*12</button></li>
+		</ul>
+	</div>
+
+	<div id="game"></div>
+
+	<footer class="footer">
+		<p>Gems Swapper - <a href="http://github.com/copycut">Didier Chartrain</a> 2014</p>
+	</footer>
+
+	<script src="assets/js/vendor/jquery.min.js"></script>
+	<script src="assets/js/vendor/jquery.easing.1.3.js"></script>
+	<script src="assets/js/vendor/hammer.min.js"></script>
+	<script src="assets/js/vendor/jquery.hammer-full.min.js"></script>
+	<script src="assets/js/game.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-49027271-1', 'copycut.github.io');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
